@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>World News</title>
+   <!-- cdn -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap">
+   <link rel="stylesheet" href="https://use.hugeicons.com/font/icons.css">
+   <script type="text/javascript" src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="w-screen min-h-screen select-none bg-white cursor-default" style="font-family: 'Zalando Sans';">
+   
+   <!-- container -->
+   <div class="max-w-3xl mx-auto min-h-screen bg-gray-50 overflow-hidden">
+      
+      <!-- header -->
+      <header class="p-5 bg-[#124c7e]">
+         <div class="flex items-center justify-between gap-5">
+            <a class="text-2xl text-white font-bold" href="/index.html">World News</a>
+            <button class="text-white py-2 px-3 bg-transparent border flex items-center justify-center rounded cursor-pointer" type="button" onclick="showSidebar();">
+               <i class="hgi hgi-stroke hgi-menu-01"></i>
+            </button>
+         </div>
+      </header>
+      
+      <!-- main content -->
+      <main class="p-5">
+         <div class="flex flex-col gap-5">
+            
+            <!-- news -->
+            <div class="flex flex-col gap-5">
+               <div class="flex flex-col">
+                  <span class="text-2xl font-semibold">News</span>
+                  <span>Here are all the latest news today.</span>
+               </div>
+               <div class="grid grid-cols-1 gap-3 md:grid-cols-2" id="newsContainer"></div>
+            </div>
+            
+            <footer class="w-fit mx-auto text-center">
+               <span>Created by @muhammadrafli</span>
+            </footer>
+            
+         </div>
+      </main>
+      
+   </div>
+   
+   <!-- script -->
+   <script type="text/javascript" src="main.js"></script>
+   
+</body>
+</html>
